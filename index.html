@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Recomeço 🐾</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h2>🐾 Recomeço</h2>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#adotar">Adotar</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="inicio" class="hero">
+  <h1>Um lar muda tudo 🐾</h1>
+  <p>Adote. Ame. Transforme uma vida.</p>
+  <button onclick="scrollToSection('adotar')">Quero adotar</button>
+</section>
+
+<section id="sobre" class="hidden-section">
+  <h2>Sobre a causa</h2>
+  <p>Todos os dias, milhares de animais enfrentam a dura realidade das ruas, como: fome, medo e abandono. Muitos já conheceram um lar, outros nunca tiveram a chance de sentir o carinho de alguém. Ainda assim, mesmo depois de tudo, eles continuam acreditando no amor.
+Nossa missão é mudar essa história. Acreditamos que cada animal merece cuidado, respeito e, acima de tudo, uma segunda chance. Quando você adota, você não está apenas salvando uma vida, mas também abrindo espaço para que outros sejam resgatados.
+Adotar é um gesto de empatia, responsabilidade e amor. É transformar abandono em esperança e solidão em companheirismo. Juntos, podemos construir um mundo onde nenhum animal precise lutar sozinho para sobreviver..</p>
+</section>
+
+<section id="adotar">
+  <h2>Pets disponíveis</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" alt="cachorro">
+      <h3>Thor</h3>
+      <p>1 ano</p>
+      <button onclick="abrirModal()">Ver mais</button>
+    </div>
+
+    <div class="card">
+      
+      <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="gato">
+      <h3>Luna</h3>
+      <p>1 ano</p>
+      <button onclick="abrirModal()">Ver mais</button>
+    </div>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16" alt="cachorro">
+  <h3>Zeca</h3>
+  <p>2 anos</p>
+  <button onclick="abrirModal()">Ver mais</button>
+</div>
+
+<div class="card">
+  <img src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg" alt="gato">
+
+  <h3>Merlot</h3>
+  <p>3 anos</p>
+  <button onclick="abrirModal()">Ver mais</button>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a" alt="cachorro">
+  <h3>Bemol</h3>
+  <p>4 meses</p>
+  <button onclick="abrirModal()">Ver mais</button>
+</div>
+
+<div class="card">
+ <img src="https://images.unsplash.com/photo-1511044568932-338cba0ad803?w=500" alt="gato">
+
+  <h3>Judith</h3>
+  <p>1 ano</p>
+  <button onclick="abrirModal()">Ver mais</button>
+</div>
+
+  </div>
+</section>
+
+<section id="contato">
+  <h2>Fale conosco</h2>
+
+  <form onsubmit="return validarForm()">
+    <input type="text" id="nome" placeholder="Seu nome" required>
+    <input type="email" id="email" placeholder="Seu email" required>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Projeto Recomeço 🐾</p>
+</footer>
+
+
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <p>Esse pet só precisa de uma chance para ser feliz. Entre em contato e descubra como você pode oferecer um lar cheio de amor. Adotar é mais do que ajudar é transformar uma vida para sempre.</p>
+    <button onclick="fecharModal()">Fechar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
